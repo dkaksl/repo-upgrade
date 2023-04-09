@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
+    "husky": "husky",
+    "commitlint": "commitlint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/dkaksl/repo-upgrade#readme",
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
+    "commitlint": "^17.5.1",
     "husky": "^8.0.3",
     "prettier": "^2.8.7"
   },
@@ -26,5 +30,10 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "none"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
