@@ -20,5 +20,10 @@
   "homepage": "https://github.com/dkaksl/repo-upgrade#readme",
   "devDependencies": {
     "husky": "^8.0.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
   }
 }
