@@ -7,6 +7,7 @@
     "prepare": "husky install",
     "husky": "husky",
     "commitlint": "commitlint",
+    "lint": "eslint .",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +26,9 @@
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@tsconfig/node16": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "typescript": "^5.0.4"
@@ -38,5 +42,16 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "root": true
   }
 }
