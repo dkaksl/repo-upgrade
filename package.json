@@ -47,6 +47,9 @@
     ]
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "src/**/*.js"
+    ],
     "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended"
